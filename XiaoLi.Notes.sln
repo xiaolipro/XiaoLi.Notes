@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multiThreading", "multiThreading", "{FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.ThreadingBase", "1.ThreadingBase", "{23DDAF72-5BCB-4382-B58D-B856C2CBDB00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.ThreadPool", "2.ThreadPool", "{3FCFD9CB-1FFD-49AD-9C9D-D1F20A3B2EDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.SynchronizationBase", "3.SynchronizationBase", "{6A40BF84-F2B2-463E-84B6-CDE0B7AFDF1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.ThreadingAdvance", "4.ThreadingAdvance", "{B79AA8C1-5BB9-4E9E-A4F9-3FA382E9CB73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.ParallelPrograming", "5.ParallelPrograming", "{CEB72B46-DAF4-4964-A4C1-EF64C216D9F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationBase", "multiThreading\3.SynchronizationBase\SynchronizationBase\SynchronizationBase.csproj", "{1BFF3926-1381-4F0D-86A9-5C2F45F3A476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23DDAF72-5BCB-4382-B58D-B856C2CBDB00} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
+		{3FCFD9CB-1FFD-49AD-9C9D-D1F20A3B2EDA} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
+		{6A40BF84-F2B2-463E-84B6-CDE0B7AFDF1B} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
+		{B79AA8C1-5BB9-4E9E-A4F9-3FA382E9CB73} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
+		{CEB72B46-DAF4-4964-A4C1-EF64C216D9F9} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
+		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476} = {6A40BF84-F2B2-463E-84B6-CDE0B7AFDF1B}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

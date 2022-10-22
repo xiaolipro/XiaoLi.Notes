@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.SynchronizationBase", "3.SynchronizationBase", "{D488BB11-A715-4903-8B61-E08D35B00DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingTests", "3.SynchronizationBase\ThreadingTests\ThreadingTests.csproj", "{7503C4DA-9893-4600-B072-01598AED28EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7503C4DA-9893-4600-B072-01598AED28EA} = {D488BB11-A715-4903-8B61-E08D35B00DE2}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7503C4DA-9893-4600-B072-01598AED28EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7503C4DA-9893-4600-B072-01598AED28EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7503C4DA-9893-4600-B072-01598AED28EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7503C4DA-9893-4600-B072-01598AED28EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
