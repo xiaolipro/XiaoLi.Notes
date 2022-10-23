@@ -2,11 +2,11 @@
 
 namespace ThreadingBase;
 
-public class 传递参数
+public class _2传递参数
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public 传递参数(ITestOutputHelper testOutputHelper)
+    public _2传递参数(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }
@@ -14,6 +14,7 @@ public class 传递参数
     [Fact]
     public void 传参()
     {
+        // string msg = "123"
         var t = new Thread(msg => Go(msg));  // 开一个线程t
         t.Start("hello world!");  // 启动t线程，执行Go方法
         
@@ -31,7 +32,8 @@ public class 传递参数
     {
         for (int i = 0; i < 10; i++)
         {
-            new Thread (() => Go(i)).Start();
+            int t = i;
+            new Thread (() => Go(t)).Start();
         }
     }
 }

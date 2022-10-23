@@ -2,11 +2,11 @@
 
 namespace ThreadingBase;
 
-public class 异常
+public class _3异常处理
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public 异常(ITestOutputHelper testOutputHelper)
+    public _3异常处理(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }
@@ -31,6 +31,8 @@ public class 异常
     {
         AppDomain.CurrentDomain.UnhandledException += HandleUnHandledException;
         new Thread(Go).Start();  // 启动t线程，执行Go方法
+        
+        Thread.Sleep(1000);
     }
 
     void HandleUnHandledException(object sender, UnhandledExceptionEventArgs eventArgs)

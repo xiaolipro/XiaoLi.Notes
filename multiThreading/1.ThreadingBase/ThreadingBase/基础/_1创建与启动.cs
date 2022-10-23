@@ -2,11 +2,11 @@ using Xunit.Abstractions;
 
 namespace ThreadingBase;
 
-public class 创建与启动
+public class _1创建与启动
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public 创建与启动(ITestOutputHelper testOutputHelper)
+    public _1创建与启动(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }

@@ -18,11 +18,11 @@ public class 前后台线程
         _testOutputHelper.WriteLine(worker.IsAlive.ToString());
         _testOutputHelper.WriteLine(worker.IsBackground.ToString());
         _testOutputHelper.WriteLine(worker.IsThreadPoolThread.ToString());
-
+        worker.IsBackground = true;
         worker.Start();
         
         _testOutputHelper.WriteLine(worker.IsAlive.ToString());
-        _testOutputHelper.WriteLine(worker.IsBackground.ToString());
+        _testOutputHelper.WriteLine("IsBackground" + worker.IsBackground.ToString());
         _testOutputHelper.WriteLine(worker.IsThreadPoolThread.ToString());
         
         // Thread.Sleep(100);
