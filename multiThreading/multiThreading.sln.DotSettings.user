@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b5cb49b2_002D38be_002D445d_002Da873_002Ddc34ec29de5c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="测试Go" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.MonitorTests.测试Go&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.ReentrantLockTests.测试Monitor是可重入锁&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.Locks.MutexTests.测试Mutex互斥体&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.DeadLockTests.测试死锁&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

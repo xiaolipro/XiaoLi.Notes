@@ -27,12 +27,12 @@ public class MonitorTests
 
         num = 0;
         Parallel.For(0, threadNum, s => Monitor实现线程安全的Go2());
-
+        
         _testOutputHelper.WriteLine(num.ToString());
-
+        
         num = 0;
         Parallel.For(0, threadNum, s => Lock语法糖实现线程安全的Go());
-
+        
         _testOutputHelper.WriteLine(num.ToString());
     }
 
@@ -41,7 +41,7 @@ public class MonitorTests
     {
         for (int i = 0; i < 10000; i++)
         {
-            num++;
+            num++; // 读写
         }
     }
 
@@ -85,6 +85,7 @@ public class MonitorTests
             bool taken = false;
             try
             {
+                Monitor.TryEnter(_locker);
                 // JIT应该内联此方法，以便在典型情况下优化lockTaken参数的检查。请注意，要使VM允许内联，方法必须是透明的。
                 Monitor.Enter(_locker,ref taken);
                 num++;

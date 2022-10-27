@@ -8,7 +8,7 @@ public class DeadLockTests
         object locker1 = new object();
         object locker2 = new object();
 
-        new Thread(() =>
+        new Thread(() => // work
         {
             lock (locker1)
             {
