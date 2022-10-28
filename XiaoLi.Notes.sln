@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationBase", "mult
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingBase", "multiThreading\1.ThreadingBase\ThreadingBase\ThreadingBase.csproj", "{0D1ED0AA-18F7-42CA-9A8F-85AC66CADACF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{310E250E-100F-4C2F-82CB-D893985E5299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkTests", "benchmarks\BenchmarkTests\BenchmarkTests\BenchmarkTests.csproj", "{1ECEF974-8D1E-4925-BCF8-984E380B5EAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,7 @@ Global
 		{CEB72B46-DAF4-4964-A4C1-EF64C216D9F9} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
 		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476} = {6A40BF84-F2B2-463E-84B6-CDE0B7AFDF1B}
 		{0D1ED0AA-18F7-42CA-9A8F-85AC66CADACF} = {23DDAF72-5BCB-4382-B58D-B856C2CBDB00}
+		{1ECEF974-8D1E-4925-BCF8-984E380B5EAB} = {310E250E-100F-4C2F-82CB-D893985E5299}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1BFF3926-1381-4F0D-86A9-5C2F45F3A476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -39,5 +44,9 @@ Global
 		{0D1ED0AA-18F7-42CA-9A8F-85AC66CADACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1ED0AA-18F7-42CA-9A8F-85AC66CADACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1ED0AA-18F7-42CA-9A8F-85AC66CADACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECEF974-8D1E-4925-BCF8-984E380B5EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECEF974-8D1E-4925-BCF8-984E380B5EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECEF974-8D1E-4925-BCF8-984E380B5EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECEF974-8D1E-4925-BCF8-984E380B5EAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -3,6 +3,6 @@
 using BenchmarkDotNet.Running;
 using BenchmarkTests;
 
-BenchmarkRunner.Run<ChannelBenchmark>();
+BenchmarkRunner.Run<CompareBenchmark>();
 
 Console.ReadKey();
