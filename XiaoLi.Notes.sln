@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multiThreading", "multiThreading", "{FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}"
+	ProjectSection(SolutionItems) = preProject
+		multiThreading\多线程基础.md = multiThreading\多线程基础.md
+		multiThreading\同步基础.md = multiThreading\同步基础.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingBase", "multiThreading\ThreadingBase\ThreadingBase.csproj", "{F95C332F-F768-4097-80C5-E9BCD067BF59}"
 EndProject
