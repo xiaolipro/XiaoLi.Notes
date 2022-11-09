@@ -183,4 +183,20 @@ public class EventWaitHandleTests
 
     #endregion
 
+
+    [Fact]
+    void 生产消费队列()
+    {
+        using (var queue = new PCQueue(_testOutputHelper))
+        {
+            queue.AddTask("hello");
+            for (int i = 0; i < 10; i++)
+            {
+                queue.AddTask("say " + i);
+            }
+
+            queue.AddTask("bye");
+        }
+    }
+
 }
