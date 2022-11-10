@@ -13,17 +13,18 @@ public class 内存屏障
         _testOutputHelper = testOutputHelper;
     }
     
-    //private int a, b;
+    private int a, b, x, y;
 
     [Fact]
     // [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
     void 重排序和缓存()
     {
         var dic = new Dictionary<(int, int), int>();
+        
         for (int i = 0; i < 1e6; i++)
         {
-            int a = 0, b = 0;
-            int x = 0, y = 0;
+            a = 0;
+            b = 0;
             var task1 = Task.Run(() =>
             {
                 a = 1;  // 写

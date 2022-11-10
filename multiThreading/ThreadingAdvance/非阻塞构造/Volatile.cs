@@ -10,8 +10,7 @@ public class Volatile
     {
         _testOutputHelper = testOutputHelper;
     }
-    
-    //private int a, b;
+    private int a, b;
 
     [Fact]
     // [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
