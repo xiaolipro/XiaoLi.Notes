@@ -20,6 +20,13 @@
       &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.非阻塞构造.InterlockedTests.CAS&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.非阻塞构造.CASTests.CAS&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.非阻塞构造.CASTests.ABA&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadStatic测试.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadStatic测试&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试2.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试2.线程安全的随机数&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试2.GUID真唯一吗&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试2.GUID的hashcode唯一吗&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;A118DB84-BF8B-4A2A-BB82-DF3FB78900DC/d:非阻塞构造/f:Volatile.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
