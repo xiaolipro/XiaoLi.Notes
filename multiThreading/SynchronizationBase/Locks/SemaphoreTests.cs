@@ -5,7 +5,7 @@ namespace XiaoLi.NET.UnitTests;
 public class SemaphoreTests
 {
     private readonly ITestOutputHelper _testOutputHelper;
-    private static readonly SemaphoreSlim SemaphoreSlim = new SemaphoreSlim(3, 3);
+    private static readonly SemaphoreSlim SemaphoreSlim = new SemaphoreSlim(3, 1);
 
     public SemaphoreTests(ITestOutputHelper testOutputHelper)
     {
@@ -22,20 +22,20 @@ public class SemaphoreTests
         }
     }
 
-    [Theory]
-    [InlineData(10)]
-    void 并行测试SemaphoreSlim(int threadCnt)
-    {
-        Parallel.For(0, threadCnt, 进来玩);
-    }
+    // [Theory]
+    // [InlineData(10)]
+    // void 并行测试SemaphoreSlim(int threadCnt)
+    // {
+    //     Parallel.For(0, threadCnt, 进来玩);
+    // }
 
     private async void 进来玩(int x)
     {
         _testOutputHelper.WriteLine(x + "想进来");
-        await SemaphoreSlim.WaitAsync(); // - 1
+        await SemaphoreSlim.WaitAsync(); // - 1 尝试进入房间   thread.sleep(-1)
         _testOutputHelper.WriteLine(x + "进来了");
-        await Task.Delay(1000 * x);
+        await Task.Delay(1000 * x);  // 业务逻辑
         _testOutputHelper.WriteLine(x + "溜了");
-        SemaphoreSlim.Release(); // + 1
+        SemaphoreSlim.Release(); // + 1 可用容量
     }
 }

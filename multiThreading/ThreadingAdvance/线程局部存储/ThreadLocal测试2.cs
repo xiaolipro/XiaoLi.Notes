@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Runtime.CompilerServices;
 using Xunit.Abstractions;
 
 namespace ThreadingAdvance.线程局部存储;
@@ -43,7 +44,7 @@ public class ThreadLocal测试2
             }
         });
         var set = new HashSet<int>(list);
-        Assert.Equal(threadCnt *times, set.Count);
+        Assert.Equal(threadCnt * times, set.Count);
     }
 
     [Fact]
@@ -78,32 +79,102 @@ public class ThreadLocal测试2
                 //_testOutputHelper.WriteLine(n.ToString());
             }
         });
-        _testOutputHelper.WriteLine("集合总数"+list.Count.ToString());
-        _testOutputHelper.WriteLine("参与线程总数"+set.Count);
+        _testOutputHelper.WriteLine("集合总数" + list.Count.ToString());
+        _testOutputHelper.WriteLine("参与线程总数" + set.Count);
         var arr = new int[list.Count];
         int len = list.Count;
         for (int i = 0; i < len; i++)
         {
-             list.TryTake(out arr[i]);
+            list.TryTake(out arr[i]);
         }
+
         Array.Sort(arr);
-         int cnt = 0;
-         for (int i = 0; i < len; i++)
-         {
-             if (i + 1 < len && arr[i + 1] == arr[i])
-             {
-                 while (i + 1< len && arr[i + 1] == arr[i])
-                 {
-                     _testOutputHelper.WriteLine($"第{i + 1}:{arr[i + 1]}和第{i}:{arr[i]}发生了碰撞");
-                     cnt++;
-                     i++;
-                 }
-             }
-             
-         }
+        int cnt = 0;
+        for (int i = 0; i < len; i++)
+        {
+            if (i + 1 < len && arr[i + 1] == arr[i])
+            {
+                while (i + 1 < len && arr[i + 1] == arr[i])
+                {
+                    _testOutputHelper.WriteLine($"第{i + 1}:{arr[i + 1]}和第{i}:{arr[i]}发生了碰撞");
+                    cnt++;
+                    i++;
+                }
+            }
+        }
+
         _testOutputHelper.WriteLine("重复数量=" + cnt);
-        
+
         var set3 = new HashSet<int>(arr);
         _testOutputHelper.WriteLine("arr去重后=" + set3.Count);
     }
+
+
+    [Fact]
+    void 不同的int值的hashcode相同吗()
+    {
+        var set = new HashSet<int>();
+        for (int i = 0; i < 1e5; i++)
+        {
+            set.Add(i.GetHashCode());
+        }
+
+        _testOutputHelper.WriteLine("去重后=" + set.Count);
+        Assert.Equal(1e5, set.Count);
+    }
+
+    [Fact]
+    void 不同的结构体hashcode相同吗()
+    {
+        var set = new HashSet<int>();
+        for (int i = 0; i < 1e5; i++)
+        {
+            var x = new MyStruct
+            {
+                val = i
+            };
+            set.Add(x.GetHashCode());
+        }
+
+        _testOutputHelper.WriteLine("去重后=" + set.Count);
+        Assert.Equal(1e5, set.Count);
+    }
+
+    [Fact]
+    void 不同的GUIDhashcode相同吗2()
+    {
+        var set = new HashSet<int>();
+        var set2 = new HashSet<Guid>();
+        var exits = new List<int>();
+        for (int i = 0; i < 1e5; i++)
+        {
+            var x = Guid.NewGuid();
+            
+            if (!set.Add(x.GetHashCode()))
+            {
+                _testOutputHelper.WriteLine("已存在的hashcode：" + x.GetHashCode());
+                exits.Add(x.GetHashCode());
+            }
+            set2.Add(x);
+        }
+
+        foreach (var x in exits)
+        {
+            foreach (var y in set2)
+            {
+                if (x == y.GetHashCode())
+                {
+                    _testOutputHelper.WriteLine("guid=" + y.ToString("n") + " hashcode=" +y.GetHashCode());
+                }
+            }
+        }
+
+        _testOutputHelper.WriteLine("hashcode去重后=" + set.Count);
+        _testOutputHelper.WriteLine("guid去重后=" + set2.Count);
+    }
+}
+
+public struct MyStruct
+{
+    public int val { get; set; }
 }

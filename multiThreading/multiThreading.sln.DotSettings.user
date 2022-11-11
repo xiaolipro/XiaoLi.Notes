@@ -5,5 +5,9 @@
     &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.ReentrantLockTests.测试Monitor是可重入锁&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.Locks.MutexTests.测试Mutex互斥体&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.DeadLockTests.测试死锁&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::XiaoLi.NET.UnitTests.SemaphoreTests.循环测试SemaphoreSlim&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::SynchronizationBase.EventWaitHandles.EventWaitHandleTests.测试ManualResetEvent&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::SynchronizationBase.EventWaitHandles.EventWaitHandleTests.测试AutoResetEvent&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::34DFD6FB-324D-4F48-BAF9-8380EF226222::net6.0::SynchronizationBase.EventWaitHandles.CountdownEventTest.测试CountdownEvent等待&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

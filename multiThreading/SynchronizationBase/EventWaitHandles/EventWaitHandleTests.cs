@@ -17,8 +17,8 @@ public class EventWaitHandleTests
     [Fact]
     void 测试ManualResetEvent()
     {
-        //var waitHandle = new ManualResetEvent(false);
-        var waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset);
+        var waitHandle = new ManualResetEvent(false);
+        // var waitHandle = new EventWaitHandle(false, EventResetMode.AutoReset);
         Task.Run(() =>
         {
             _testOutputHelper.WriteLine(Thread.CurrentThread.ManagedThreadId + " 尝试进门...");
@@ -45,16 +45,17 @@ public class EventWaitHandleTests
         {
             _testOutputHelper.WriteLine(Thread.CurrentThread.ManagedThreadId + " 尝试进门...");
             waitHandle.WaitOne();
+            _testOutputHelper.WriteLine("当前门的状态是开启的吗？"+waitHandle.WaitOne(0));
             _testOutputHelper.WriteLine(Thread.CurrentThread.ManagedThreadId + " 进去了");
             业务逻辑();
-            // _testOutputHelper.WriteLine("当前门的状态是开启的吗？"+waitHandle.WaitOne(0));
-            // waitHandle.Set();
-            // Task.Run(() =>
-            // {
-            //     waitHandle.WaitOne();
-            //     _testOutputHelper.WriteLine(Thread.CurrentThread.ManagedThreadId + " 进去了");
-            //     业务逻辑();
-            // });
+            _testOutputHelper.WriteLine("当前门的状态是开启的吗？"+waitHandle.WaitOne(0));
+            waitHandle.Set();
+            Task.Run(() =>
+            {
+                waitHandle.WaitOne();
+                _testOutputHelper.WriteLine(Thread.CurrentThread.ManagedThreadId + " 进去了");
+                业务逻辑();
+            });
         });
         Thread.Sleep(1000);
         _testOutputHelper.WriteLine(Thread.CurrentThread.ManagedThreadId + " say：我来开门");
