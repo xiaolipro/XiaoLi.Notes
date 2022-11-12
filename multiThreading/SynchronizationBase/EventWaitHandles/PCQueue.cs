@@ -1,4 +1,5 @@
-﻿using Xunit.Abstractions;
+﻿using System.Collections.Concurrent;
+using Xunit.Abstractions;
 
 namespace SynchronizationBase.EventWaitHandles;
 
@@ -60,6 +61,5 @@ public class PCQueue:IDisposable
         AddTask(null);  // 通知消费线程退出
         _worker.Join();  // 等待消费线程执行完成
         _waitHandle.Close();  // 释放事件句柄
-        _tasks.Clear();
     }
 }

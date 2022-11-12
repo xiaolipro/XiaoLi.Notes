@@ -28,13 +28,13 @@ public class 内存屏障
             var task1 = Task.Run(() =>
             {
                 a = 1;  // 写
-                // Thread.MemoryBarrier();
+                Thread.MemoryBarrier();
                 x = b;  // 读
             });
             var task2 = Task.Run(() =>
             {
                 b = 2;  // 写
-                //Thread.MemoryBarrier();
+                Thread.MemoryBarrier();
                 y = a;  // 读
             });
             Task.WaitAll(task1, task2);
@@ -52,8 +52,8 @@ public class 内存屏障
 
 public class Foo
 {
-    private int _answer;
-    private bool _complete;
+    private volatile int _answer;
+    private volatile bool _complete;
 
     private readonly ITestOutputHelper _testOutputHelper;
 

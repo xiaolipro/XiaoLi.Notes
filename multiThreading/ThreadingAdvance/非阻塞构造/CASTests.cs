@@ -27,7 +27,7 @@ public class CASTests
         {
             for (int i = 0; i < 100000; i++)
             {
-                Interlocked.Increment(ref _num);
+                _num++;
             }
         });
         t1.Start();
@@ -67,7 +67,6 @@ public class CASTests
     int a ,b;
     void Exam()
     {
-        
         if (a > b)
             b = a;
     }
