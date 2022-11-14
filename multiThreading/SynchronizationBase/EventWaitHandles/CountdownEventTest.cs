@@ -34,7 +34,6 @@ public class CountdownEventTest
 
 
 
-
     #region 结构化并行构造
     [Fact]
     void 用Parallel实现等待()

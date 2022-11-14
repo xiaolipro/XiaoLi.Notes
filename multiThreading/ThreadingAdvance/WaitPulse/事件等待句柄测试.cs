@@ -2,14 +2,14 @@
 
 namespace ThreadingAdvance.WaitPulse;
 
-public class AutoResetEventTests
+public class 事件等待句柄测试
 {
     private readonly ITestOutputHelper _testOutputHelper;
     private readonly object _locker = new object();
     private bool _ok;
     private int _count;
 
-    public AutoResetEventTests(ITestOutputHelper testOutputHelper)
+    public 事件等待句柄测试(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }

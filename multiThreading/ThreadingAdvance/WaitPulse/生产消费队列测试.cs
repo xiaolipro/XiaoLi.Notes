@@ -2,11 +2,11 @@
 
 namespace ThreadingAdvance.WaitPulse;
 
-public class PCQueueTest
+public class 生产消费队列测试
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public PCQueueTest(ITestOutputHelper testOutputHelper)
+    public 生产消费队列测试(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }

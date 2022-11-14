@@ -6,7 +6,6 @@ public class SemaphoreTests
 {
     private readonly ITestOutputHelper _testOutputHelper;
     private static readonly SemaphoreSlim SemaphoreSlim = new SemaphoreSlim(3, 1);
-
     public SemaphoreTests(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
