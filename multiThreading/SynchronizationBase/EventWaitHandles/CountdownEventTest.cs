@@ -27,7 +27,7 @@ public class CountdownEventTest
 
     void 工作()
     {
-        _testOutputHelper.WriteLine("干活");
+        _testOutputHelper.WriteLine("线程："+Thread.CurrentThread.ManagedThreadId+" 正在干活");
         Thread.Sleep(1000);
         _countdown.Signal();//+1
     }

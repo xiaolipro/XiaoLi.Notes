@@ -62,7 +62,7 @@ public class EventWaitHandleTests
         waitHandle.Set();
         
         
-        Thread.Sleep(1000);
+        Thread.Sleep(1000);  // 等待worker
     }
 
 
@@ -106,17 +106,19 @@ public class EventWaitHandleTests
     }
 
     [Fact]
-    async Task 拉闸测试()
+    void 拉闸测试()
     {
         EventWaitHandle waitHandle = new AutoResetEvent(true);
-        await Task.Run(() =>
+        new Thread(() =>
         {
             _testOutputHelper.WriteLine("等待通知");
             waitHandle.WaitOne(); // 等待通知
             _testOutputHelper.WriteLine("接到通知");
             业务逻辑();
-        });
-        waitHandle.Reset();waitHandle.Reset();waitHandle.Reset();waitHandle.Reset();waitHandle.Reset();
+        }).Start();
+        waitHandle.Reset();
+        _testOutputHelper.WriteLine("ok");
+        Thread.Sleep(1000);
     }
 
     [Fact]
@@ -191,7 +193,7 @@ public class EventWaitHandleTests
         using (var queue = new PCQueue(_testOutputHelper))
         {
             queue.AddTask("hello");
-            for (int i = 0; i < 10; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 queue.AddTask("say " + i);
             }

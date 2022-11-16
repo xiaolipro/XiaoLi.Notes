@@ -17,9 +17,9 @@ public class 等待句柄和线程池
         var _waitHandle = new ManualResetEvent(false);
         _testOutputHelper.WriteLine ("thread id - " + Thread.CurrentThread.ManagedThreadId);
         var reg = ThreadPool.RegisterWaitForSingleObject(_waitHandle, Work, "hahah", -1, true);
-        _testOutputHelper.WriteLine ("thread id - " + Thread.CurrentThread.ManagedThreadId);
         Thread.Sleep(3000);
         _testOutputHelper.WriteLine("发送复位信号");
+        _testOutputHelper.WriteLine ("thread id - " + Thread.CurrentThread.ManagedThreadId);
         _waitHandle.Set();
         reg.Unregister(_waitHandle);
     }
