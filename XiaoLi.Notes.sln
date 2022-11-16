@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingAdvance", "multiTh
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{885A4B93-CAC4-41BF-B191-D88217F6408D}"
 	ProjectSection(SolutionItems) = preProject
-		readme.md = readme.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
