@@ -44,6 +44,8 @@
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;xUnit::9C879B7E-9C1D-4950-92ED-B0D5FD95B581::net6.0::SynchronizationBase.拓展.WaitHandleTests.SignalAndWaitTest&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::9C879B7E-9C1D-4950-92ED-B0D5FD95B581::net6.0::SynchronizationBase.拓展.WaitHandleTests.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.AsParallel.找素数&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.AsParallel.LINQ&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
