@@ -26,6 +26,7 @@ public class 线程会和测试
         _testOutputHelper.WriteLine("Mate! ");
     }
 
+
     void Mate(object delay)
     {
         Thread.Sleep((int)delay);
