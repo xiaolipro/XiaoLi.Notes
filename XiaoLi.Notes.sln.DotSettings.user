@@ -48,6 +48,9 @@
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.AsParallel.LINQ&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.拼写检查.检查&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.拼写检查&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.Ping测试.Ping&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.图形合成.合成&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.取消.Show&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

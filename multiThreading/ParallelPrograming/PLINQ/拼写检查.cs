@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -67,11 +68,12 @@ public class 拼写检查
             File.ReadAllLines("WordLookup.txt"),
             StringComparer.InvariantCultureIgnoreCase);
 
-        var random = new Random();
         string[] wordList = wordLookup.ToArray();
 
-        string[] wordsToTest = Enumerable.Range(0, 100_0000)
-            .Select(i => wordList[random.Next(0, wordList.Length)])
+        var localRandom = new ThreadLocal<Random>(() => new Random());
+
+        string[] wordsToTest = Enumerable.Range(0, 100_0000).AsParallel()
+            .Select(i => wordList[localRandom.Value.Next(0, wordList.Length)])
             .ToArray();
 
         wordsToTest[12345] = "woozsh"; // 引入两个拼写错误

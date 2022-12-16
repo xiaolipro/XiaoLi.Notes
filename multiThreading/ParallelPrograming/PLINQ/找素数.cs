@@ -6,17 +6,17 @@ using Xunit.Abstractions;
 
 namespace ParallelPrograming.PLINQ;
 
-public class AsParallel
+public class 找素数
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public AsParallel(ITestOutputHelper testOutputHelper)
+    public 找素数(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }
 
     [Fact]
-    void 找素数()
+    void PLINQ()
     {
         IEnumerable<int> numbers = Enumerable.Range(3, 100000 - 3);
 
@@ -40,7 +40,7 @@ public class AsParallel
 
         var parallelQuery = numbers.Where(x => Enumerable.Range(2, (int)Math.Sqrt(x)).All(i => x % i > 0));
 
-        int[] primes = parallelQuery.Skip(1).Take(3).ToArray();
+        int[] primes = parallelQuery.ToArray();
 
         _testOutputHelper.WriteLine(string.Join(",", primes));
     }
