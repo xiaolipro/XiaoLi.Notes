@@ -29,19 +29,19 @@ public class 找素数
 
         int[] primes = parallelQuery.ToArray();
 
-        _testOutputHelper.WriteLine(string.Join(",", primes));
+        //_testOutputHelper.WriteLine(string.Join(",", primes));
     }
     
     
     [Fact]
     void LINQ()
     {
-        IEnumerable<int> numbers = Enumerable.Range(3, 100000 - 3);
+        IEnumerable<int> numbers = ParallelEnumerable.Range(3, 100000 - 3);
 
         var parallelQuery = numbers.Where(x => Enumerable.Range(2, (int)Math.Sqrt(x)).All(i => x % i > 0));
 
         int[] primes = parallelQuery.ToArray();
 
-        _testOutputHelper.WriteLine(string.Join(",", primes));
+        //_testOutputHelper.WriteLine(string.Join(",", primes));
     }
 }
