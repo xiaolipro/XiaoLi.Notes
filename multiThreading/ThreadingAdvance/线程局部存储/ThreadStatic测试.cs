@@ -5,7 +5,7 @@ namespace ThreadingAdvance.线程局部存储;
 public class ThreadStatic测试
 {
     private readonly ITestOutputHelper _testOutputHelper;
-    [ThreadStatic] private static int _num;
+    [ThreadStatic] private static int _num; // zero value
 
     public ThreadStatic测试(ITestOutputHelper testOutputHelper)
     {
@@ -17,7 +17,7 @@ public class ThreadStatic测试
     {
         void Work()
         {
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 1e5; i++)
             {
                 _num++;
             }

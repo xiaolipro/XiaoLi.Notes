@@ -29,7 +29,7 @@ public class LocalDataStoreSlot测试
         var t1 = new Thread(Work);
         var t2 = new Thread(Work);
         
-        //Thread.FreeNamedDataSlot("mySlot");
+        Thread.FreeNamedDataSlot("mySlot");
 
         t1.Start();
         t2.Start();
@@ -37,6 +37,13 @@ public class LocalDataStoreSlot测试
         t2.Join();
 
         _testOutputHelper.WriteLine(((int)(Thread.GetData(_slot)??0)).ToString());
+    }
+
+    public async Task F()
+    {
+        Console.WriteLine(); // 29
+        await Task.Delay(1000);  // ? 1 2 218937
+        Console.WriteLine();  // 29
     }
     
     [Fact]
