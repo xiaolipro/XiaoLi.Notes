@@ -17,22 +17,24 @@ public class 聚合
     [Fact]
     void LINQ_SUM()
     {
-        int sum = Enumerable.Range(1, 100_0000).Aggregate(0, (pre, cur) => pre + cur);
+        int sum = Enumerable.Range(1, 5_0000).Aggregate(0, (pre, cur) => pre + cur);
+        int sum2 = Enumerable.Range(1, 5_0000).Sum();
         _testOutputHelper.WriteLine("sum: " + sum);
+        _testOutputHelper.WriteLine("sum2: " + sum2);
     }
 
 
     [Fact]
-    void PINQ_SUM()
+    void PLINQ_SUM()
     {
-        int sum = Enumerable.Range(1, 100_0000).AsParallel().Aggregate(0, (pre, cur) => pre + cur);
+        int sum = Enumerable.Range(1, 5_0000).AsParallel().Aggregate(0, (pre, cur) => pre + cur);
         _testOutputHelper.WriteLine("sum: " + sum);
     }
 
     [Fact]
-    void PINQ_SUM_SEED()
+    void PLINQ_SUM_SEED()
     {
-        int sum = Enumerable.Range(1, 100_0000).AsParallel().Aggregate(
+        int sum = Enumerable.Range(1, 5_0000).AsParallel().Aggregate(
             () => 0,
             (pre, cur) => pre + cur,
             (main, local) => main + local,

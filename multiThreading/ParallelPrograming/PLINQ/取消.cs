@@ -23,6 +23,7 @@ public class 取消
         IEnumerable<int> numbers = Enumerable.Range(3, 1000000 - 3);
 
         var cancelSource = new CancellationTokenSource();
+        cancelSource.CancelAfter(2);
 
         var parallelQuery = numbers
             .AsParallel()
@@ -30,7 +31,6 @@ public class 取消
             .WithCancellation(cancelSource.Token)
             .Where(x => Enumerable.Range(2, (int)Math.Sqrt(x)).All(i => x % i > 0));
 
-        Task.Run(() => { Thread.Sleep(2); cancelSource.Cancel(); });
 
         try
         {

@@ -47,6 +47,17 @@
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.Task家族.等待与取消.WaitAny&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.Task家族.异常.Show&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.Task家族.异常.Task内部异常&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.找素数.LINQ&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.找素数.PLINQ&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.找素数.缓冲行为&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.拼写检查.普通检查&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.拼写检查.并行检查&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.Ping测试.Ping&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.Ping测试.IOBUND&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.取消.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.聚合.LINQ_SUM&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.聚合.PLINQ_SUM&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.PLINQ.聚合.PLINQ_SUM_SEED&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:Task家族/f:创建与启动.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
