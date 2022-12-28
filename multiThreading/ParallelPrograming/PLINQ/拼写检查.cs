@@ -22,7 +22,7 @@ public class 拼写检查
     [Fact]
     void 普通检查()
     {
-        if (!File.Exists("WordLookup.txt")) // 包含约 150,000 个单词
+        if (!File.Exists("WordLookup.txt")) // 包含约 15,000 个单词
         {
             var res = new HttpClient().GetByteArrayAsync(new Uri("http://www.albahari.com/ispell/allwords.txt"))
                 .GetAwaiter().GetResult();
@@ -45,8 +45,8 @@ public class 拼写检查
 
         var query = wordsToTest
             .Select((word, index) => new IndexedWord { Word = word, Index = index })
-            .Where(iword => !wordLookup.Contains(iword.Word))
-            .OrderBy(iword => iword.Index);
+            .Where(iword => !wordLookup.Contains(iword.Word));
+            //.OrderBy(iword => iword.Index);
 
         foreach (var item in query)
         {

@@ -5,8 +5,8 @@ namespace ThreadingAdvance.拓展;
 public class AsyncLocal测试
 {
     private readonly ITestOutputHelper _testOutputHelper;
-    AsyncLocal<int> _num = new AsyncLocal<int>();
-    ThreadLocal<int> _num2 = new ThreadLocal<int>();
+    AsyncLocal<int> _asyncLocalNum = new AsyncLocal<int>();
+    ThreadLocal<int> _threadLocalNum = new ThreadLocal<int>();
 
     public AsyncLocal测试(ITestOutputHelper testOutputHelper)
     {
@@ -14,32 +14,28 @@ public class AsyncLocal测试
     }
 
 
+    async Task Work()
+    {
+        for (int i = 0; i < 100000; i++)
+        {
+            _asyncLocalNum.Value++;
+            _threadLocalNum.Value++;
+        }
+        _testOutputHelper.WriteLine(_asyncLocalNum.Value.ToString());
+        _testOutputHelper.WriteLine(_threadLocalNum.Value.ToString());
+
+        await Task.Delay(100);
+        for (int i = 0; i < 100000; i++)
+        {
+            _asyncLocalNum.Value++;
+            _threadLocalNum.Value++;
+        }
+        _testOutputHelper.WriteLine(_asyncLocalNum.Value.ToString());
+        _testOutputHelper.WriteLine(_threadLocalNum.Value.ToString());
+    }
     [Fact]
     async Task Show()
     {
-        async Task Work()
-        {
-            for (int i = 0; i < 100000; i++)
-            {
-                _num.Value++;
-                _num2.Value++;
-            }
-            _testOutputHelper.WriteLine(_num.Value.ToString());
-            _testOutputHelper.WriteLine(_num2.Value.ToString());
-
-            await Task.Delay(100);
-            for (int i = 0; i < 100000; i++)
-            {
-                _num.Value++;
-                _num2.Value++;
-            }
-            _testOutputHelper.WriteLine(_num.Value.ToString());
-            _testOutputHelper.WriteLine(_num2.Value.ToString());
-        }
-
         await Work();
-
-        _testOutputHelper.WriteLine(_num.Value.ToString());
-        _testOutputHelper.WriteLine(_num2.Value.ToString());
     }
 }

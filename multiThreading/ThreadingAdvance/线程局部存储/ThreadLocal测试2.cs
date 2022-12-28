@@ -16,9 +16,9 @@ public class ThreadLocal测试2
     [Fact]
     void Show()
     {
-        var threadName = new ThreadLocal<string>(() => "Thread" + Thread.CurrentThread.ManagedThreadId);
+        var threadName = new ThreadLocal<string>(() => "Thread" + Thread.CurrentThread.ManagedThreadId);    
 
-        Parallel.For(0, 13, x =>
+        Parallel.For(0, 20, x =>
         {
             bool repeat = threadName.IsValueCreated;
             _testOutputHelper.WriteLine($"ThreadName = {threadName.Value} {(repeat ? "(repeat)" : "")}");
