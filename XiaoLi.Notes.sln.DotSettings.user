@@ -71,6 +71,11 @@
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.Parallel类.ForEachAsync案例.执行100个任务&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.Parallel类.ForEachAsync案例.信号量控制并发&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::604EF2F8-7BF8-44B4-9005-88A7CAF66951::net6.0::ParallelPrograming.Parallel类.ForEachAsync案例.Parallel控制并发&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._1协变逆变.协变&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._1协变逆变replay.协变&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._1协变逆变replay.逆变&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._2Span和Memory.SPAN&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._2Span和Memory.SPAN2&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:PLINQ/f:找素数.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:Parallel类/f:拼写检查.cs&lt;/ProjectFile&gt;&#xD;
