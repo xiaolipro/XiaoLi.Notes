@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using Xunit.Abstractions;
 
-namespace QuestionsAndReplaies;
+namespace QuestionsAndReplies;
 
-public class _1协变逆变replay
+public class _2协变逆变replay
 {
     private static ITestOutputHelper _testOutputHelper;
 
-    public _1协变逆变replay(ITestOutputHelper testOutputHelper)
+    public _2协变逆变replay(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }

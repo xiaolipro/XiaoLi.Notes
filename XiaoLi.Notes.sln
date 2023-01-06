@@ -21,7 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelPrograming", "multi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "questions", "questions", "{C064EB71-2C7A-4C14-8845-5D11A64F7144}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsAndReplaies", "QuestionsAndReplaies\QuestionsAndReplaies.csproj", "{D8166435-0418-42DA-AA1F-532940978534}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsAndReplies", "QuestionsAndReplies\QuestionsAndReplies.csproj", "{D8166435-0418-42DA-AA1F-532940978534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionsAndReplies.Benchmarks", "QuestionsAndReplies.Benchmarks\QuestionsAndReplies.Benchmarks.csproj", "{C22FF6D7-2072-40BF-AFD5-745E5BC152A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,7 @@ Global
 		{A118DB84-BF8B-4A2A-BB82-DF3FB78900DC} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
 		{604EF2F8-7BF8-44B4-9005-88A7CAF66951} = {FEBF8BC6-EAAF-4459-A0AD-B16ADAAA0AAB}
 		{D8166435-0418-42DA-AA1F-532940978534} = {C064EB71-2C7A-4C14-8845-5D11A64F7144}
+		{C22FF6D7-2072-40BF-AFD5-745E5BC152A9} = {C064EB71-2C7A-4C14-8845-5D11A64F7144}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F95C332F-F768-4097-80C5-E9BCD067BF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -61,5 +64,9 @@ Global
 		{D8166435-0418-42DA-AA1F-532940978534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8166435-0418-42DA-AA1F-532940978534}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8166435-0418-42DA-AA1F-532940978534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22FF6D7-2072-40BF-AFD5-745E5BC152A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22FF6D7-2072-40BF-AFD5-745E5BC152A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22FF6D7-2072-40BF-AFD5-745E5BC152A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22FF6D7-2072-40BF-AFD5-745E5BC152A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

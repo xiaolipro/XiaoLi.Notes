@@ -1,14 +1,13 @@
 ﻿using System.Diagnostics;
-using System.Runtime.InteropServices;
 using Xunit.Abstractions;
 
-namespace QuestionsAndReplaies;
+namespace QuestionsAndReplies._2Span和Memory;
 
-public class _2Span和Memory
+public class _1Span和Memory
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public _2Span和Memory(ITestOutputHelper testOutputHelper)
+    public _1Span和Memory(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }
@@ -17,11 +16,10 @@ public class _2Span和Memory
     [Fact]
     void SPAN()
     {
-        Span<int> span = stackalloc int[100000];
-
-        span.Slice(0, 100);
-        var arr = new int[100000];
-        var t = arr[1..2];
+        Span<int> span = stackalloc int[10];
+        var span2 = span.Slice(2, 20);
+        span2[2] = 100;
+        _testOutputHelper.WriteLine(span[4].ToString());
     }
 
     [Fact]

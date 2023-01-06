@@ -1,6 +1,6 @@
 using Xunit.Abstractions;
 
-namespace QuestionsAndReplaies;
+namespace QuestionsAndReplies._1协变逆变;
 
 public class _1协变逆变
 {

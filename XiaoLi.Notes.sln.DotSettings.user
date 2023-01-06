@@ -76,6 +76,10 @@
       &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._1协变逆变replay.逆变&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._2Span和Memory.SPAN&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplaies._2Span和Memory.SPAN2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D8166435-0418-42DA-AA1F-532940978534::net7.0::QuestionsAndReplies._2Span和Memory._1Span和Memory.SPAN&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadStatic测试.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试2.Show&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.拓展.AsyncLocal测试&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:PLINQ/f:找素数.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:Parallel类/f:拼写检查.cs&lt;/ProjectFile&gt;&#xD;
