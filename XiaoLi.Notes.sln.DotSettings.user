@@ -80,6 +80,7 @@
       &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadStatic测试.Show&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.线程局部存储.ThreadLocal测试2.Show&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::A118DB84-BF8B-4A2A-BB82-DF3FB78900DC::net6.0::ThreadingAdvance.拓展.AsyncLocal测试&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F95C332F-F768-4097-80C5-E9BCD067BF59::net6.0::ThreadingBase._1创建与启动.线程命名&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:PLINQ/f:找素数.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;604EF2F8-7BF8-44B4-9005-88A7CAF66951/d:Parallel类/f:拼写检查.cs&lt;/ProjectFile&gt;&#xD;
